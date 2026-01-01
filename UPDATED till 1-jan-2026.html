@@ -1,0 +1,5311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Resources Hub - 100+ Websites</title>
+    <style>
+      :root {
+        --color-bg: #0f172a;
+        --color-surface: #1e293b;
+        --color-accent: #0ea5e9;
+        --color-accent-dark: #0284c7;
+        --color-text: #e2e8f0;
+        --color-text-secondary: #cbd5e1;
+        --color-success: #10b981;
+        --color-warning: #f59e0b;
+        --color-danger: #ef4444;
+        --color-purple: #a855f7;
+        --color-pink: #ec4899;
+        --color-orange: #f97316;
+        --color-cyan: #06b6d4;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(135deg, var(--color-bg) 0%, #0c0f1a 100%);
+        color: var(--color-text);
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+
+      /* Navigation */
+      nav {
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(226, 232, 240, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 1rem 0;
+      }
+
+      .nav-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .nav-brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+        background: linear-gradient(
+          135deg,
+          var(--color-accent) 0%,
+          var(--color-purple) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        color: var(--color-text-secondary);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.85rem;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--color-accent);
+      }
+
+      /* Header */
+      .header {
+        text-align: center;
+        padding: 3rem 2rem 2rem 2rem;
+        background: linear-gradient(
+          135deg,
+          rgba(14, 165, 233, 0.1) 0%,
+          rgba(168, 85, 247, 0.1) 100%
+        );
+        border-bottom: 1px solid rgba(226, 232, 240, 0.1);
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(
+          135deg,
+          var(--color-accent) 0%,
+          var(--color-cyan) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .header p {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      /* Search Bar */
+      .search-container {
+        max-width: 1400px;
+        margin: -1.5rem auto 0;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      .search-box {
+        width: 100%;
+        max-width: 600px;
+        padding: 0.8rem 1.5rem;
+        background: var(--color-surface);
+        border: 1px solid rgba(226, 232, 240, 0.1);
+        border-radius: 999px;
+        color: var(--color-text);
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+      }
+
+      .search-box:focus {
+        outline: none;
+        border-color: var(--color-accent);
+        box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+        background: rgba(30, 41, 59, 0.9);
+      }
+
+      /* Main Container */
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      /* Category Section */
+      .category-section {
+        margin-bottom: 3.5rem;
+      }
+
+      .category-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid rgba(226, 232, 240, 0.1);
+      }
+
+      .category-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        margin-right: 1.5rem;
+        flex-shrink: 0;
+      }
+
+      .category-icon.research {
+        background: linear-gradient(
+          135deg,
+          var(--color-accent),
+          var(--color-cyan)
+        );
+      }
+      .category-icon.ebook {
+        background: linear-gradient(
+          135deg,
+          var(--color-orange),
+          var(--color-pink)
+        );
+      }
+      .category-icon.textbook {
+        background: linear-gradient(135deg, var(--color-success), #22c55e);
+      }
+      .category-icon.learning {
+        background: linear-gradient(
+          135deg,
+          var(--color-purple),
+          var(--color-pink)
+        );
+      }
+      .category-icon.academic {
+        background: linear-gradient(
+          135deg,
+          var(--color-warning),
+          var(--color-orange)
+        );
+      }
+      .category-icon.document {
+        background: linear-gradient(
+          135deg,
+          var(--color-cyan),
+          var(--color-accent)
+        );
+      }
+      .category-icon.wikimedia {
+        background: linear-gradient(135deg, #06b6d4, #0ea5e9);
+      }
+      .category-icon.specialized {
+        background: linear-gradient(
+          135deg,
+          var(--color-pink),
+          var(--color-purple)
+        );
+      }
+      .category-icon.images {
+        background: linear-gradient(135deg, #ec4899, #f97316);
+      }
+      .category-icon.design {
+        background: linear-gradient(135deg, #06b6d4, #a855f7);
+      }
+      .category-icon.audio {
+        background: linear-gradient(135deg, #f59e0b, #10b981);
+      }
+      .category-icon.tech {
+        background: linear-gradient(135deg, #0ea5e9, #f97316);
+      }
+      .category-icon.opensource {
+        background: linear-gradient(135deg, #10b981, #0ea5e9);
+      }
+      .category-icon.news {
+        background: linear-gradient(135deg, #a855f7, #ec4899);
+      }
+      .category-icon.productivity {
+        background: linear-gradient(135deg, #f59e0b, #ef4444);
+      }
+      .category-icon.media {
+        background: linear-gradient(135deg, #8b5cf6, #ec4899);
+      }
+      .category-icon.math {
+        background: linear-gradient(135deg, #06b6d4, #10b981);
+      }
+      .category-icon.writing {
+        background: linear-gradient(135deg, #f97316, #ec4899);
+      }
+
+      .category-header h2 {
+        font-size: 1.6rem;
+        margin: 0;
+      }
+
+      .category-count {
+        font-size: 0.85rem;
+        color: var(--color-accent);
+        margin-left: auto;
+        background: rgba(14, 165, 233, 0.1);
+        padding: 0.5rem 1rem;
+        border-radius: 999px;
+      }
+
+      /* Banner Grid */
+      .banner-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+
+      /* Banner Card */
+      .banner-card {
+        background: linear-gradient(
+          135deg,
+          rgba(30, 41, 59, 0.8) 0%,
+          rgba(30, 41, 59, 0.4) 100%
+        );
+        border: 1px solid rgba(226, 232, 240, 0.1);
+        border-radius: 12px;
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .banner-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          var(--color-accent),
+          var(--color-purple)
+        );
+      }
+
+      .banner-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(14, 165, 233, 0.5);
+        box-shadow: 0 15px 35px rgba(14, 165, 233, 0.15);
+        background: linear-gradient(
+          135deg,
+          rgba(30, 41, 59, 0.95) 0%,
+          rgba(30, 41, 59, 0.5) 100%
+        );
+      }
+
+      .banner-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 0.8rem;
+      }
+
+      .banner-card h3 {
+        font-size: 1.2rem;
+        margin: 0;
+        color: var(--color-accent);
+        flex-grow: 1;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 0.25rem 0.6rem;
+        background: rgba(14, 165, 233, 0.2);
+        border: 1px solid rgba(14, 165, 233, 0.4);
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: var(--color-accent);
+        white-space: nowrap;
+        margin-left: 0.5rem;
+      }
+
+      .banner-card p {
+        color: var(--color-text-secondary);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+      }
+
+      .banner-features {
+        list-style: none;
+        margin-bottom: 1rem;
+        font-size: 0.85rem;
+      }
+
+      .banner-features li {
+        padding: 0.3rem 0;
+        color: var(--color-text-secondary);
+        padding-left: 1.2rem;
+        position: relative;
+      }
+
+      .banner-features li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--color-success);
+        font-weight: bold;
+        font-size: 0.8rem;
+      }
+
+      .banner-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7rem 1.3rem;
+        background: linear-gradient(
+          135deg,
+          var(--color-accent) 0%,
+          var(--color-cyan) 100%
+        );
+        color: var(--color-bg);
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+
+      .banner-link:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(14, 165, 233, 0.35);
+      }
+
+      .banner-link::after {
+        content: "→";
+        transition: transform 0.3s ease;
+      }
+
+      .banner-link:hover::after {
+        transform: translateX(4px);
+      }
+
+      /* Stats Section */
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.2rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .stat-card {
+        background: rgba(30, 41, 59, 0.6);
+        border: 1px solid rgba(226, 232, 240, 0.1);
+        border-radius: 12px;
+        padding: 1.3rem 1rem;
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        background: linear-gradient(
+          135deg,
+          var(--color-accent),
+          var(--color-purple)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .stat-label {
+        color: var(--color-text-secondary);
+        font-size: 0.85rem;
+        margin-top: 0.4rem;
+      }
+
+      /* Footer */
+      footer {
+        background: rgba(15, 23, 42, 0.9);
+        border-top: 1px solid rgba(226, 232, 240, 0.1);
+        padding: 2rem;
+        text-align: center;
+        margin-top: 3rem;
+        color: var(--color-text-secondary);
+        font-size: 0.9rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 1.8rem;
+        }
+
+        .nav-links {
+          gap: 0.5rem;
+        }
+
+        .banner-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .category-header h2 {
+          font-size: 1.3rem;
+        }
+
+        .category-count {
+          font-size: 0.75rem;
+        }
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="nav-brand">📚 FreeHub 100+</div>
+        <ul class="nav-links">
+          <li><a href="#research">Research</a></li>
+          <li><a href="#ebooks">E-Books</a></li>
+          <li><a href="#textbooks">Textbooks</a></li>
+          <li><a href="#learning">Learning</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#audio">Audio</a></li>
+          <li><a href="#productivity">Tools</a></li>
+          <li><a href="#tech">Tech</a></li>
+          <li><a href="#math">Math</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#collaboration">Chat</a></li>
+          <li><a href="#data">Data</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#health">Health</a></li>
+          <li><a href="#webdev">Web Dev</a></li>
+          <li><a href="#art">Art</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#storage">Storage</a></li>
+          <li><a href="#reading">Reading</a></li>
+          <li><a href="#podcasts">Podcasts</a></li>
+          <li><a href="#email">Email</a></li>
+          <li><a href="#browser">Browser</a></li>
+          <li><a href="#gaming">Gaming</a></li>
+          <li><a href="#music">Music</a></li>
+          <li><a href="#conversion">Convert</a></li>
+          <li><a href="#astronomy">Space</a></li>
+          <li><a href="#science">Science</a></li>
+          <li><a href="#coding">Code</a></li>
+          <li><a href="#streaming">Video</a></li>
+          <li><a href="#hosting">Host</a></li>
+          <li><a href="#graphics">Graphics</a></li>
+          <li><a href="#icons">Icons</a></li>
+          <li><a href="#database">Database</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#certificates">Cert</a></li>
+          <li><a href="#seo">SEO</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Free Resources Hub - 100+ Websites</h1>
+      <p>
+        Ultimate collection of free websites for study, work, creativity &
+        entertainment - all organized and searchable
+      </p>
+    </div>
+
+    <!-- Search -->
+    <div class="search-container">
+      <input
+        type="text"
+        class="search-box"
+        id="searchInput"
+        placeholder="🔍 Search 100+ resources by name or keyword..."
+      />
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Websites</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">18</div>
+          <div class="stat-label">Categories</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">10B+</div>
+          <div class="stat-label">Resources</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Free</div>
+        </div>
+      </div>
+
+      <!-- Research & Academic Papers (6 sites) -->
+      <div class="category-section" id="research">
+        <div class="category-header">
+          <div class="category-icon research">🔬</div>
+          <div>
+            <h2>Research & Academic Papers</h2>
+            <div class="category-count">7 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Google Scholar</h3>
+              <span class="badge">200M+</span>
+            </div>
+            <p>
+              Comprehensive academic search engine with 200+ million indexed
+              articles across all disciplines.
+            </p>
+            <ul class="banner-features">
+              <li>200M+ articles</li>
+              <li>Citation export</li>
+              <li>Free PDF links</li>
+              <li>Author profiles</li>
+            </ul>
+            <a
+              href="https://scholar.google.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>CORE</h3>
+              <span class="badge">219M+</span>
+            </div>
+            <p>
+              Largest aggregator of open-access research with advanced search
+              and filtering capabilities.
+            </p>
+            <ul class="banner-features">
+              <li>219M+ OA articles</li>
+              <li>Discipline filters</li>
+              <li>PDF hosting</li>
+              <li>Recommendations</li>
+            </ul>
+            <a href="https://core.ac.uk" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Semantic Scholar</h3>
+              <span class="badge">AI</span>
+            </div>
+            <p>
+              AI-powered search engine with paper summaries and intelligent
+              recommendations.
+            </p>
+            <ul class="banner-features">
+              <li>AI summaries</li>
+              <li>Citation tracking</li>
+              <li>Author insights</li>
+              <li>Related papers</li>
+            </ul>
+            <a
+              href="https://www.semanticscholar.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Paperity</h3>
+              <span class="badge">OA</span>
+            </div>
+            <p>
+              Open-access journal search with advanced filtering across all
+              academic disciplines.
+            </p>
+            <ul class="banner-features">
+              <li>All disciplines</li>
+              <li>Advanced filters</li>
+              <li>Mobile app</li>
+              <li>Journal ratings</li>
+            </ul>
+            <a href="https://paperity.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>DOAJ</h3>
+              <span class="badge">Directory</span>
+            </div>
+            <p>
+              Community-curated directory of high-quality open-access journals
+              with peer review.
+            </p>
+            <ul class="banner-features">
+              <li>Quality vetted</li>
+              <li>Multidisciplinary</li>
+              <li>Advanced search</li>
+              <li>API available</li>
+            </ul>
+            <a href="https://doaj.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>SSRN</h3>
+              <span class="badge">Papers</span>
+            </div>
+            <p>
+              Social Science Research Network with 700K+ research papers and
+              working papers.
+            </p>
+            <ul class="banner-features">
+              <li>700K+ papers</li>
+              <li>Working papers</li>
+              <li>Author profiles</li>
+              <li>Email alerts</li>
+            </ul>
+            <a href="https://ssrn.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>PubMed Central</h3>
+              <span class="badge">Biomedical</span>
+            </div>
+            <p>
+              Free full-text archive of biomedical and life sciences journal
+              literature.
+            </p>
+            <ul class="banner-features">
+              <li>Free full-text</li>
+              <li>Biomedical focus</li>
+              <li>Advanced search</li>
+              <li>Download PDFs</li>
+            </ul>
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- E-Books & PDF Repositories (8 sites) -->
+      <div class="category-section" id="ebooks">
+        <div class="category-header">
+          <div class="category-icon ebook">📕</div>
+          <div>
+            <h2>Free E-Books & PDF Repositories</h2>
+            <div class="category-count">8 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Z-Library</h3>
+              <span class="badge">8.5M+</span>
+            </div>
+            <p>
+              World's largest free e-book library with millions of books and
+              academic papers.
+            </p>
+            <ul class="banner-features">
+              <li>8.5M+ books</li>
+              <li>Multiple formats</li>
+              <li>Fast downloads</li>
+              <li>Search interface</li>
+            </ul>
+            <a href="https://z-lib.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Smashwords</h3>
+              <span class="badge">Indie</span>
+            </div>
+            <p>Free and affordable indie ebooks from independent authors.</p>
+            <ul class="banner-features">
+              <li>Indie authors</li>
+              <li>Free section</li>
+              <li>Multiple formats</li>
+              <li>DRM-free</li>
+            </ul>
+            <a
+              href="https://www.smashwords.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>BookBaby</h3>
+              <span class="badge">Publishing</span>
+            </div>
+            <p>
+              Indie book publishing platform with free and paid distribution
+              options.
+            </p>
+            <ul class="banner-features">
+              <li>Self-publishing</li>
+              <li>Distribution</li>
+              <li>Free tools</li>
+              <li>Global reach</li>
+            </ul>
+            <a
+              href="https://www.bookbaby.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Anna's Archive</h3>
+              <span class="badge">Meta</span>
+            </div>
+            <p>
+              Meta-search engine aggregating multiple book and paper libraries.
+            </p>
+            <ul class="banner-features">
+              <li>Multi-source</li>
+              <li>Fast search</li>
+              <li>Resilient</li>
+              <li>Mirrors</li>
+            </ul>
+            <a
+              href="https://annas-archive.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>PDF Drive</h3>
+              <span class="badge">Millions</span>
+            </div>
+            <p>
+              Massive PDF database with textbooks, papers, and educational
+              materials.
+            </p>
+            <ul class="banner-features">
+              <li>Millions of PDFs</li>
+              <li>No registration</li>
+              <li>Preview</li>
+              <li>Categories</li>
+            </ul>
+            <a
+              href="https://www.pdfdrive.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Library Genesis</h3>
+              <span class="badge">Academic</span>
+            </div>
+            <p>
+              Free access to textbooks, research papers, and academic journals.
+            </p>
+            <ul class="banner-features">
+              <li>Direct downloads</li>
+              <li>Multiple mirrors</li>
+              <li>Searchable</li>
+              <li>All subjects</li>
+            </ul>
+            <a href="https://library.lol" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Project Gutenberg</h3>
+              <span class="badge">75K+</span>
+            </div>
+            <p>
+              75,000+ free public domain books including classics and historical
+              texts.
+            </p>
+            <ul class="banner-features">
+              <li>Public domain</li>
+              <li>Multiple formats</li>
+              <li>No login</li>
+              <li>Mobile friendly</li>
+            </ul>
+            <a
+              href="https://www.gutenberg.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Open Library</h3>
+              <span class="badge">Borrow</span>
+            </div>
+            <p>Digital borrowing system with millions of free book records.</p>
+            <ul class="banner-features">
+              <li>Borrow ebooks</li>
+              <li>Legal & free</li>
+              <li>No costs</li>
+              <li>Reading lists</li>
+            </ul>
+            <a
+              href="https://openlibrary.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Internet Archive</h3>
+              <span class="badge">1.6M+</span>
+            </div>
+            <p>
+              1.6M+ free books plus audio, video, software and web snapshots.
+            </p>
+            <ul class="banner-features">
+              <li>Books & media</li>
+              <li>Wayback Machine</li>
+              <li>Research access</li>
+              <li>Multiple formats</li>
+            </ul>
+            <a href="https://archive.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Standard Ebooks</h3>
+              <span class="badge">Quality</span>
+            </div>
+            <p>
+              High-quality, carefully formatted free ebooks in public domain.
+            </p>
+            <ul class="banner-features">
+              <li>Quality texts</li>
+              <li>Well formatted</li>
+              <li>Multiple formats</li>
+              <li>Public domain</li>
+            </ul>
+            <a
+              href="https://standardebooks.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Free Educational Textbooks (4 sites) -->
+      <div class="category-section" id="textbooks">
+        <div class="category-header">
+          <div class="category-icon textbook">📖</div>
+          <div>
+            <h2>Free Educational Textbooks</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>OpenStax</h3>
+              <span class="badge">38+</span>
+            </div>
+            <p>
+              38+ peer-reviewed, freely licensed textbooks for college and high
+              school.
+            </p>
+            <ul class="banner-features">
+              <li>38+ textbooks</li>
+              <li>Peer reviewed</li>
+              <li>Lecture slides</li>
+              <li>Free download</li>
+            </ul>
+            <a href="https://openstax.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Open Textbook Library</h3>
+              <span class="badge">Thousands</span>
+            </div>
+            <p>
+              Repository with thousands of freely licensed textbooks across all
+              subjects.
+            </p>
+            <ul class="banner-features">
+              <li>All subjects</li>
+              <li>Peer reviewed</li>
+              <li>Editable</li>
+              <li>Free access</li>
+            </ul>
+            <a
+              href="https://open.umn.edu/opentextbooks"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>CK-12 FlexBook</h3>
+              <span class="badge">Interactive</span>
+            </div>
+            <p>
+              Interactive open textbooks with simulations and practice
+              exercises.
+            </p>
+            <ul class="banner-features">
+              <li>Interactive</li>
+              <li>Customizable</li>
+              <li>STEM focus</li>
+              <li>Free accounts</li>
+            </ul>
+            <a href="https://www.ck12.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>OpenLearn</h3>
+              <span class="badge">OU</span>
+            </div>
+            <p>
+              The Open University's free course materials and educational
+              resources.
+            </p>
+            <ul class="banner-features">
+              <li>University level</li>
+              <li>Free courses</li>
+              <li>Videos included</li>
+              <li>Certificates</li>
+            </ul>
+            <a
+              href="https://www.open.edu/openlearn"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Online Learning Platforms (6 sites) -->
+      <div class="category-section" id="learning">
+        <div class="category-header">
+          <div class="category-icon learning">🎓</div>
+          <div>
+            <h2>Online Learning & Course Platforms</h2>
+            <div class="category-count">6 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Khan Academy</h3>
+              <span class="badge">Free</span>
+            </div>
+            <p>
+              Completely free K-12 through college courses with progress
+              tracking.
+            </p>
+            <ul class="banner-features">
+              <li>All levels</li>
+              <li>No paywall</li>
+              <li>Analytics</li>
+              <li>Practice tests</li>
+            </ul>
+            <a
+              href="https://www.khanacademy.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>edX</h3>
+              <span class="badge">Universities</span>
+            </div>
+            <p>
+              Top university courses with free audit options from MIT, Harvard,
+              and more.
+            </p>
+            <ul class="banner-features">
+              <li>Top institutions</li>
+              <li>Audit free</li>
+              <li>Certificates</li>
+              <li>MOOCs</li>
+            </ul>
+            <a href="https://www.edx.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Class Central</h3>
+              <span class="badge">Aggregator</span>
+            </div>
+            <p>
+              Aggregates free courses from universities and platforms worldwide.
+            </p>
+            <ul class="banner-features">
+              <li>Multi-platform</li>
+              <li>Reviews</li>
+              <li>Rankings</li>
+              <li>Search</li>
+            </ul>
+            <a
+              href="https://www.classcentral.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>MIT OpenCourseWare</h3>
+              <span class="badge">MIT</span>
+            </div>
+            <p>
+              MIT course materials including lecture notes, assignments, and
+              exams.
+            </p>
+            <ul class="banner-features">
+              <li>Full courses</li>
+              <li>STEM heavy</li>
+              <li>No login</li>
+              <li>Self-paced</li>
+            </ul>
+            <a href="https://ocw.mit.edu" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Coursera</h3>
+              <span class="badge">Audit</span>
+            </div>
+            <p>University and company courses with many auditable for free.</p>
+            <ul class="banner-features">
+              <li>Audit free</li>
+              <li>Wide selection</li>
+              <li>Certificates</li>
+              <li>Degrees</li>
+            </ul>
+            <a
+              href="https://www.coursera.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>OpenLearning</h3>
+              <span class="badge">Social</span>
+            </div>
+            <p>
+              Social learning platform with community-driven courses and
+              discussions.
+            </p>
+            <ul class="banner-features">
+              <li>Community</li>
+              <li>Free courses</li>
+              <li>Discussions</li>
+              <li>Peer feedback</li>
+            </ul>
+            <a
+              href="https://www.openlearning.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Free Stock Images & Graphics (6 sites) -->
+      <div class="category-section" id="images">
+        <div class="category-header">
+          <div class="category-icon images">🖼️</div>
+          <div>
+            <h2>Free Stock Images & Graphics</h2>
+            <div class="category-count">6 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Unsplash</h3>
+              <span class="badge">Millions</span>
+            </div>
+            <p>
+              Large library of beautiful, high-resolution photos free for any
+              use.
+            </p>
+            <ul class="banner-features">
+              <li>Huge library</li>
+              <li>No attribution</li>
+              <li>High res</li>
+              <li>API access</li>
+            </ul>
+            <a href="https://unsplash.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Pexels</h3>
+              <span class="badge">Photos</span>
+            </div>
+            <p>Free stock photos and videos for personal and commercial use.</p>
+            <ul class="banner-features">
+              <li>Photos & video</li>
+              <li>No license</li>
+              <li>Good search</li>
+              <li>Mobile app</li>
+            </ul>
+            <a href="https://www.pexels.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Pixabay</h3>
+              <span class="badge">CC0</span>
+            </div>
+            <p>
+              Free images, vectors, and videos with no attribution required.
+            </p>
+            <ul class="banner-features">
+              <li>Images & video</li>
+              <li>Vectors too</li>
+              <li>No attribution</li>
+              <li>Mobile apps</li>
+            </ul>
+            <a href="https://pixabay.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Freepik</h3>
+              <span class="badge">Vectors</span>
+            </div>
+            <p>
+              Vectors, illustrations, and graphics with free and premium
+              options.
+            </p>
+            <ul class="banner-features">
+              <li>Vectors & icons</li>
+              <li>Templates</li>
+              <li>Design tools</li>
+              <li>PSD files</li>
+            </ul>
+            <a
+              href="https://www.freepik.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Openverse</h3>
+              <span class="badge">CC</span>
+            </div>
+            <p>
+              Search Creative Commons licensed images across multiple providers.
+            </p>
+            <ul class="banner-features">
+              <li>CC licensed</li>
+              <li>Multi-search</li>
+              <li>Filter by use</li>
+              <li>Open source</li>
+            </ul>
+            <a href="https://openverse.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Wikimedia Commons</h3>
+              <span class="badge">Media</span>
+            </div>
+            <p>130M+ free-to-use images, videos, and media files.</p>
+            <ul class="banner-features">
+              <li>130M+ files</li>
+              <li>Reusable</li>
+              <li>License info</li>
+              <li>Download free</li>
+            </ul>
+            <a
+              href="https://commons.wikimedia.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Design & Creative Tools (6 sites) -->
+      <div class="category-section" id="design">
+        <div class="category-header">
+          <div class="category-icon design">🎨</div>
+          <div>
+            <h2>Free Design & Creative Tools</h2>
+            <div class="category-count">6 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Canva</h3>
+              <span class="badge">Templates</span>
+            </div>
+            <p>
+              Design anything using free templates for social, presentations,
+              and more.
+            </p>
+            <ul class="banner-features">
+              <li>Drag & drop</li>
+              <li>Huge templates</li>
+              <li>Stocks included</li>
+              <li>Collaboration</li>
+            </ul>
+            <a href="https://www.canva.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Pixlr</h3>
+              <span class="badge">Editor</span>
+            </div>
+            <p>
+              Browser-based photo editor with filters, effects, and design
+              tools.
+            </p>
+            <ul class="banner-features">
+              <li>Layer support</li>
+              <li>Filters & effects</li>
+              <li>Templates</li>
+              <li>Fast browser</li>
+            </ul>
+            <a href="https://pixlr.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>GIMP</h3>
+              <span class="badge">Advanced</span>
+            </div>
+            <p>
+              Full-featured open-source image editor with professional
+              capabilities.
+            </p>
+            <ul class="banner-features">
+              <li>Advanced tools</li>
+              <li>Plugins</li>
+              <li>Cross-platform</li>
+              <li>Free forever</li>
+            </ul>
+            <a href="https://www.gimp.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Inkscape</h3>
+              <span class="badge">Vector</span>
+            </div>
+            <p>
+              Open-source vector graphics editor for logos and illustrations.
+            </p>
+            <ul class="banner-features">
+              <li>Vector editor</li>
+              <li>SVG support</li>
+              <li>Bezier tools</li>
+              <li>Professional</li>
+            </ul>
+            <a href="https://inkscape.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Figma</h3>
+              <span class="badge">Collab</span>
+            </div>
+            <p>
+              Collaborative design tool for UI/UX with real-time team editing.
+            </p>
+            <ul class="banner-features">
+              <li>Real-time collab</li>
+              <li>Prototyping</li>
+              <li>Web-based</li>
+              <li>Free tier</li>
+            </ul>
+            <a href="https://www.figma.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Blender</h3>
+              <span class="badge">3D</span>
+            </div>
+            <p>
+              Free and open-source 3D creation software for modeling and
+              animation.
+            </p>
+            <ul class="banner-features">
+              <li>3D modeling</li>
+              <li>Animation</li>
+              <li>Rendering</li>
+              <li>Open source</li>
+            </ul>
+            <a
+              href="https://www.blender.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Stock Music & Audio (4 sites) -->
+      <div class="category-section" id="audio">
+        <div class="category-header">
+          <div class="category-icon audio">🎵</div>
+          <div>
+            <h2>Free Stock Music & Audio</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Freesound</h3>
+              <span class="badge">11K+</span>
+            </div>
+            <p>
+              Community sound database with CC licensed audio clips and effects.
+            </p>
+            <ul class="banner-features">
+              <li>Sound effects</li>
+              <li>CC licensed</li>
+              <li>Tags & packs</li>
+              <li>Free download</li>
+            </ul>
+            <a href="https://freesound.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Jamendo</h3>
+              <span class="badge">40K+</span>
+            </div>
+            <p>
+              Independent music platform with CC licensed tracks for personal
+              use.
+            </p>
+            <ul class="banner-features">
+              <li>Indie artists</li>
+              <li>CC options</li>
+              <li>Streaming</li>
+              <li>Licensing</li>
+            </ul>
+            <a
+              href="https://www.jamendo.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>CC Search (Audio)</h3>
+              <span class="badge">CC</span>
+            </div>
+            <p>
+              Creative Commons search for music and other media across
+              platforms.
+            </p>
+            <ul class="banner-features">
+              <li>Multi-source</li>
+              <li>License filters</li>
+              <li>Free use</li>
+              <li>Open source</li>
+            </ul>
+            <a
+              href="https://search.creativecommons.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Audacity</h3>
+              <span class="badge">Editor</span>
+            </div>
+            <p>
+              Open-source audio editor for recording and editing sound files.
+            </p>
+            <ul class="banner-features">
+              <li>Record audio</li>
+              <li>Multi-track</li>
+              <li>Effects</li>
+              <li>Open source</li>
+            </ul>
+            <a
+              href="https://www.audacityteam.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Productivity Tools (8 sites) -->
+      <div class="category-section" id="productivity">
+        <div class="category-header">
+          <div class="category-icon productivity">⚙️</div>
+          <div>
+            <h2>Productivity & Office Tools</h2>
+            <div class="category-count">10 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Notion</h3>
+              <span class="badge">All-in-One</span>
+            </div>
+            <p>
+              All-in-one workspace for notes, docs, databases, and project
+              management.
+            </p>
+            <ul class="banner-features">
+              <li>Free personal</li>
+              <li>Database</li>
+              <li>Templates</li>
+              <li>AI features</li>
+            </ul>
+            <a href="https://www.notion.so" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>LibreOffice</h3>
+              <span class="badge">Office</span>
+            </div>
+            <p>
+              Complete open-source office suite with Writer, Calc, Impress and
+              more.
+            </p>
+            <ul class="banner-features">
+              <li>Word processor</li>
+              <li>Spreadsheets</li>
+              <li>Presentations</li>
+              <li>Open source</li>
+            </ul>
+            <a
+              href="https://www.libreoffice.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Todoist</h3>
+              <span class="badge">Tasks</span>
+            </div>
+            <p>
+              Free task management and to-do list with productivity tracking
+              features.
+            </p>
+            <ul class="banner-features">
+              <li>Task lists</li>
+              <li>Projects</li>
+              <li>Recurring tasks</li>
+              <li>Cross-platform</li>
+            </ul>
+            <a href="https://todoist.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Zenodo</h3>
+              <span class="badge">Repository</span>
+            </div>
+            <p>
+              Open science repository for research papers, datasets, and
+              software.
+            </p>
+            <ul class="banner-features">
+              <li>CERN-funded</li>
+              <li>Open science</li>
+              <li>DOI assignment</li>
+              <li>Free deposits</li>
+            </ul>
+            <a href="https://zenodo.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Google Docs</h3>
+              <span class="badge">Collab</span>
+            </div>
+            <p>
+              Free online document editor with real-time collaboration and
+              sharing.
+            </p>
+            <ul class="banner-features">
+              <li>Real-time edit</li>
+              <li>Share easily</li>
+              <li>Auto-save</li>
+              <li>Mobile-friendly</li>
+            </ul>
+            <a
+              href="https://docs.google.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Trello</h3>
+              <span class="badge">Kanban</span>
+            </div>
+            <p>
+              Visual project management tool using Kanban boards with free tier.
+            </p>
+            <ul class="banner-features">
+              <li>Kanban boards</li>
+              <li>Drag & drop</li>
+              <li>Collaboration</li>
+              <li>Free tier</li>
+            </ul>
+            <a href="https://trello.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Overleaf</h3>
+              <span class="badge">LaTeX</span>
+            </div>
+            <p>
+              Online LaTeX editor for academic papers and technical documents.
+            </p>
+            <ul class="banner-features">
+              <li>No install needed</li>
+              <li>Collaboration</li>
+              <li>Templates</li>
+              <li>Free tier</li>
+            </ul>
+            <a
+              href="https://www.overleaf.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>OBS Studio</h3>
+              <span class="badge">Streaming</span>
+            </div>
+            <p>
+              Free open-source software for screen recording and live streaming.
+            </p>
+            <ul class="banner-features">
+              <li>Stream live</li>
+              <li>Record video</li>
+              <li>Multiple scenes</li>
+              <li>Open source</li>
+            </ul>
+            <a href="https://obsproject.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>VLC Media Player</h3>
+              <span class="badge">Media</span>
+            </div>
+            <p>
+              Free, open-source media player supporting all video and audio
+              formats.
+            </p>
+            <ul class="banner-features">
+              <li>All formats</li>
+              <li>No codecs needed</li>
+              <li>Cross-platform</li>
+              <li>Lightweight</li>
+            </ul>
+            <a
+              href="https://www.videolan.org/vlc/"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Jotform</h3>
+              <span class="badge">Forms</span>
+            </div>
+            <p>
+              Create online forms and surveys with free tier and no coding
+              needed.
+            </p>
+            <ul class="banner-features">
+              <li>Form builder</li>
+              <li>Drag & drop</li>
+              <li>No coding</li>
+              <li>Free tier</li>
+            </ul>
+            <a
+              href="https://www.jotform.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Developer & Tech News (4 sites) -->
+      <div class="category-section" id="tech">
+        <div class="category-header">
+          <div class="category-icon tech">💻</div>
+          <div>
+            <h2>Developer & Tech News</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>TechCrunch</h3>
+              <span class="badge">News</span>
+            </div>
+            <p>
+              Leading tech media covering startups, products, and innovation.
+            </p>
+            <ul class="banner-features">
+              <li>Startup news</li>
+              <li>Product launches</li>
+              <li>Funding news</li>
+              <li>Tech events</li>
+            </ul>
+            <a href="https://techcrunch.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Hacker News</h3>
+              <span class="badge">YC</span>
+            </div>
+            <p>
+              Community-driven link aggregator for programming and startups.
+            </p>
+            <ul class="banner-features">
+              <li>Ranked links</li>
+              <li>Deep discussions</li>
+              <li>Dev focused</li>
+              <li>Minimal UI</li>
+            </ul>
+            <a
+              href="https://news.ycombinator.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>daily.dev</h3>
+              <span class="badge">Feed</span>
+            </div>
+            <p>
+              Personalized developer news feed aggregating from many sources.
+            </p>
+            <ul class="banner-features">
+              <li>Browser extension</li>
+              <li>Dev content</li>
+              <li>Bookmarking</li>
+              <li>Community</li>
+            </ul>
+            <a href="https://daily.dev" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Dev.to</h3>
+              <span class="badge">Community</span>
+            </div>
+            <p>
+              Developer blogging platform for sharing articles and tutorials.
+            </p>
+            <ul class="banner-features">
+              <li>Developer blogs</li>
+              <li>Tag search</li>
+              <li>Series support</li>
+              <li>Open source</li>
+            </ul>
+            <a href="https://dev.to" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Open Source Software (4 sites) -->
+      <div class="category-section" id="opensource">
+        <div class="category-header">
+          <div class="category-icon opensource">🔓</div>
+          <div>
+            <h2>Open Source & Code Repositories</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>GitHub</h3>
+              <span class="badge">Largest</span>
+            </div>
+            <p>
+              World's largest platform for hosting repositories and
+              collaborating on code.
+            </p>
+            <ul class="banner-features">
+              <li>100M+ repos</li>
+              <li>Git hosting</li>
+              <li>CI/CD</li>
+              <li>Pages</li>
+            </ul>
+            <a href="https://github.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>GitLab</h3>
+              <span class="badge">DevOps</span>
+            </div>
+            <p>
+              Git platform with DevOps tools and self-hosted options available.
+            </p>
+            <ul class="banner-features">
+              <li>DevOps tools</li>
+              <li>Self-hosting</li>
+              <li>CI/CD</li>
+              <li>Issue tracking</li>
+            </ul>
+            <a
+              href="https://about.gitlab.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Codeberg</h3>
+              <span class="badge">Non-Profit</span>
+            </div>
+            <p>Community non-profit Git hosting alternative to GitHub.</p>
+            <ul class="banner-features">
+              <li>Privacy-focused</li>
+              <li>Non-profit</li>
+              <li>Gitea-based</li>
+              <li>Free hosting</li>
+            </ul>
+            <a href="https://codeberg.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Stack Overflow</h3>
+              <span class="badge">Q&A</span>
+            </div>
+            <p>
+              World's largest Q&A platform for programming and coding questions.
+            </p>
+            <ul class="banner-features">
+              <li>Q&A site</li>
+              <li>Developer help</li>
+              <li>Code snippets</li>
+              <li>Reputation</li>
+            </ul>
+            <a
+              href="https://stackoverflow.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Academic Social Networks (3 sites) -->
+      <div class="category-section" id="academic">
+        <div class="category-header">
+          <div class="category-icon academic">🤝</div>
+          <div>
+            <h2>Academic Social Networks</h2>
+            <div class="category-count">3 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>ResearchGate</h3>
+              <span class="badge">Research</span>
+            </div>
+            <p>
+              Social network for researchers to share papers and collaborate.
+            </p>
+            <ul class="banner-features">
+              <li>Paper sharing</li>
+              <li>Q&A forums</li>
+              <li>Projects</li>
+              <li>Stats</li>
+            </ul>
+            <a
+              href="https://www.researchgate.net"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Academia.edu</h3>
+              <span class="badge">Academics</span>
+            </div>
+            <p>
+              Academic platform for sharing research and networking with peers.
+            </p>
+            <ul class="banner-features">
+              <li>Paper uploads</li>
+              <li>Analytics</li>
+              <li>Networking</li>
+              <li>Profiles</li>
+            </ul>
+            <a
+              href="https://www.academia.edu"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Mendeley</h3>
+              <span class="badge">Reference</span>
+            </div>
+            <p>
+              Reference manager and academic network for organizing research.
+            </p>
+            <ul class="banner-features">
+              <li>PDF management</li>
+              <li>Citation tool</li>
+              <li>Groups</li>
+              <li>Cloud sync</li>
+            </ul>
+            <a
+              href="https://www.mendeley.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Document Sharing (4 sites) -->
+      <div class="category-section" id="document">
+        <div class="category-header">
+          <div class="category-icon document">📄</div>
+          <div>
+            <h2>Document Sharing & Publishing</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Scribd</h3>
+              <span class="badge">Docs</span>
+            </div>
+            <p>
+              Online document library with user uploads and embeddable viewer.
+            </p>
+            <ul class="banner-features">
+              <li>Upload docs</li>
+              <li>Presentations</li>
+              <li>Embed code</li>
+              <li>Cross-device</li>
+            </ul>
+            <a href="https://www.scribd.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>SlideShare</h3>
+              <span class="badge">Slides</span>
+            </div>
+            <p>Presentations and slide content from professionals worldwide.</p>
+            <ul class="banner-features">
+              <li>Expert slides</li>
+              <li>Embeddable</li>
+              <li>Search by topic</li>
+              <li>Learning</li>
+            </ul>
+            <a
+              href="https://www.slideshare.net"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Issuu</h3>
+              <span class="badge">Publishing</span>
+            </div>
+            <p>Magazine-style publication platform for PDFs and brochures.</p>
+            <ul class="banner-features">
+              <li>Magazine viewer</li>
+              <li>Embeds</li>
+              <li>Analytics</li>
+              <li>Distribution</li>
+            </ul>
+            <a href="https://issuu.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Wikimedia Commons</h3>
+              <span class="badge">Media</span>
+            </div>
+            <p>130M+ free-to-use documents and media files for reuse.</p>
+            <ul class="banner-features">
+              <li>Media files</li>
+              <li>License info</li>
+              <li>Downloadable</li>
+              <li>Reusable</li>
+            </ul>
+            <a
+              href="https://commons.wikimedia.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Wikimedia Projects (5 sites) -->
+      <div class="category-section" id="wikimedia">
+        <div class="category-header">
+          <div class="category-icon wikimedia">🌐</div>
+          <div>
+            <h2>Wikimedia Projects</h2>
+            <div class="category-count">5 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Wikipedia</h3>
+              <span class="badge">50M+</span>
+            </div>
+            <p>Free encyclopedia with 50M+ articles in 365+ languages.</p>
+            <ul class="banner-features">
+              <li>Multi-language</li>
+              <li>Cited sources</li>
+              <li>Community edited</li>
+              <li>API access</li>
+            </ul>
+            <a
+              href="https://www.wikipedia.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Wikidata</h3>
+              <span class="badge">Data</span>
+            </div>
+            <p>Structured linked data in machine-readable format.</p>
+            <ul class="banner-features">
+              <li>SPARQL endpoint</li>
+              <li>Machine-readable</li>
+              <li>Linked data</li>
+              <li>Open license</li>
+            </ul>
+            <a
+              href="https://www.wikidata.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Wikifunctions</h3>
+              <span class="badge">Code</span>
+            </div>
+            <p>Collaborative catalog of reusable functions and code.</p>
+            <ul class="banner-features">
+              <li>Reusable code</li>
+              <li>Language neutral</li>
+              <li>Community</li>
+              <li>API access</li>
+            </ul>
+            <a
+              href="https://www.wikifunctions.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Wiktionary</h3>
+              <span class="badge">Dictionary</span>
+            </div>
+            <p>Free dictionary and thesaurus with 1M+ entries.</p>
+            <ul class="banner-features">
+              <li>1M+ entries</li>
+              <li>Multi-language</li>
+              <li>Pronunciations</li>
+              <li>Translations</li>
+            </ul>
+            <a
+              href="https://www.wiktionary.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Wikiquote</h3>
+              <span class="badge">Quotes</span>
+            </div>
+            <p>
+              Collection of free, reusable quotes from famous people and works.
+            </p>
+            <ul class="banner-features">
+              <li>Quotations</li>
+              <li>By author</li>
+              <li>Multi-language</li>
+              <li>Free reuse</li>
+            </ul>
+            <a
+              href="https://www.wikiquote.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- News Aggregators & Communities (4 sites) -->
+      <div class="category-section" id="news">
+        <div class="category-header">
+          <div class="category-icon news">📰</div>
+          <div>
+            <h2>News Aggregators & Communities</h2>
+            <div class="category-count">6 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Reddit</h3>
+              <span class="badge">Communities</span>
+            </div>
+            <p>Community platform with 100K+ subreddits on every topic.</p>
+            <ul class="banner-features">
+              <li>100K+ communities</li>
+              <li>Discussion</li>
+              <li>Voting system</li>
+              <li>News & AMAs</li>
+            </ul>
+            <a href="https://reddit.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Techmeme</h3>
+              <span class="badge">Tech</span>
+            </div>
+            <p>
+              Real-time technology news aggregator focused on startups and
+              industry.
+            </p>
+            <ul class="banner-features">
+              <li>Real-time updates</li>
+              <li>Tech focused</li>
+              <li>Startup news</li>
+              <li>Trending topics</li>
+            </ul>
+            <a href="https://techmeme.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Lobsters</h3>
+              <span class="badge">Community</span>
+            </div>
+            <p>
+              Curated technology and programming news community with quality
+              discussions.
+            </p>
+            <ul class="banner-features">
+              <li>Quality moderated</li>
+              <li>Tech news</li>
+              <li>Deep discussion</li>
+              <li>No spam</li>
+            </ul>
+            <a href="https://lobste.rs" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Feedly</h3>
+              <span class="badge">RSS</span>
+            </div>
+            <p>RSS reader and news aggregator for following blogs and sites.</p>
+            <ul class="banner-features">
+              <li>Custom feeds</li>
+              <li>Alerts</li>
+              <li>Boards</li>
+              <li>Web & mobile</li>
+            </ul>
+            <a href="https://feedly.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Flipboard</h3>
+              <span class="badge">Magazine</span>
+            </div>
+            <p>Magazine-style news aggregator with personalized topics.</p>
+            <ul class="banner-features">
+              <li>Curated magazines</li>
+              <li>Topics</li>
+              <li>Visual</li>
+              <li>Mobile-first</li>
+            </ul>
+            <a href="https://flipboard.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Pocket</h3>
+              <span class="badge">Save</span>
+            </div>
+            <p>Save articles for later reading with recommendations.</p>
+            <ul class="banner-features">
+              <li>Save anywhere</li>
+              <li>Offline reading</li>
+              <li>Discover</li>
+              <li>Browser add-ons</li>
+            </ul>
+            <a href="https://getpocket.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Math & Graphing (4 sites) -->
+      <div class="category-section" id="math">
+        <div class="category-header">
+          <div class="category-icon math">📐</div>
+          <div>
+            <h2>Math & Graphing Tools</h2>
+            <div class="category-count">6 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Desmos</h3>
+              <span class="badge">Graphing</span>
+            </div>
+            <p>
+              Free graphing calculator for plotting equations and functions.
+            </p>
+            <ul class="banner-features">
+              <li>Graph functions</li>
+              <li>Sliders</li>
+              <li>Tables</li>
+              <li>Animate</li>
+            </ul>
+            <a
+              href="https://www.desmos.com/calculator"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Wolfram Alpha</h3>
+              <span class="badge">Knowledge</span>
+            </div>
+            <p>Computational knowledge engine for math, science, and data.</p>
+            <ul class="banner-features">
+              <li>Compute anything</li>
+              <li>Math tools</li>
+              <li>Free web</li>
+              <li>Detailed steps</li>
+            </ul>
+            <a
+              href="https://www.wolframalpha.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Octave (GNU)</h3>
+              <span class="badge">Computing</span>
+            </div>
+            <p>
+              Free, open-source alternative to MATLAB for numerical computing.
+            </p>
+            <ul class="banner-features">
+              <li>Matrix operations</li>
+              <li>Plotting</li>
+              <li>Programming</li>
+              <li>Open source</li>
+            </ul>
+            <a
+              href="https://www.gnu.org/software/octave/"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>SageMath</h3>
+              <span class="badge">Math</span>
+            </div>
+            <p>
+              Free mathematics software system combining many open-source tools.
+            </p>
+            <ul class="banner-features">
+              <li>Algebra & calculus</li>
+              <li>Open source</li>
+              <li>Interactive</li>
+              <li>Jupyter notebooks</li>
+            </ul>
+            <a
+              href="https://www.sagemath.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>TI 84 Emulator</h3>
+              <span class="badge">Calc</span>
+            </div>
+            <p>Online TI-84 Plus graphing calculator simulator for free.</p>
+            <ul class="banner-features">
+              <li>TI-84 emulator</li>
+              <li>Graphing</li>
+              <li>Browser-based</li>
+              <li>No download</li>
+            </ul>
+            <a href="https://ti84calc.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>GeoGebra</h3>
+              <span class="badge">Math</span>
+            </div>
+            <p>
+              Interactive math software for geometry, algebra, and calculus.
+            </p>
+            <ul class="banner-features">
+              <li>Interactive</li>
+              <li>Geometry & algebra</li>
+              <li>3D graphing</li>
+              <li>Free tier</li>
+            </ul>
+            <a
+              href="https://www.geogebra.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Writing & AI Tools (4 sites) -->
+      <div class="category-section" id="writing">
+        <div class="category-header">
+          <div class="category-icon writing">✍️</div>
+          <div>
+            <h2>Writing & AI Assistant Tools</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>ChatGPT</h3>
+              <span class="badge">AI</span>
+            </div>
+            <p>AI assistant for writing, coding, math, and creative tasks.</p>
+            <ul class="banner-features">
+              <li>Writing help</li>
+              <li>Code generation</li>
+              <li>Q&A</li>
+              <li>Free tier</li>
+            </ul>
+            <a
+              href="https://chat.openai.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Grammarly</h3>
+              <span class="badge">Writing</span>
+            </div>
+            <p>
+              AI-powered writing assistant for grammar and style suggestions.
+            </p>
+            <ul class="banner-features">
+              <li>Grammar check</li>
+              <li>Style tips</li>
+              <li>Plagiarism</li>
+              <li>Browser extension</li>
+            </ul>
+            <a
+              href="https://www.grammarly.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>ProWritingAid</h3>
+              <span class="badge">Analysis</span>
+            </div>
+            <p>Writing analysis tool with detailed reports and suggestions.</p>
+            <ul class="banner-features">
+              <li>Detailed reports</li>
+              <li>Style analysis</li>
+              <li>Goal setting</li>
+              <li>Free tier</li>
+            </ul>
+            <a
+              href="https://www.prowritingaid.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Hemingway Editor</h3>
+              <span class="badge">Simplify</span>
+            </div>
+            <p>
+              Simple editor highlighting complex sentences and style issues.
+            </p>
+            <ul class="banner-features">
+              <li>Clarity check</li>
+              <li>Color-coded</li>
+              <li>Simple style</li>
+              <li>Free online</li>
+            </ul>
+            <a
+              href="https://hemingwayapp.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Media & Entertainment (2 sites) -->
+      <div class="category-section" id="media">
+        <div class="category-header">
+          <div class="category-icon media">🎬</div>
+          <div>
+            <h2>Media & Entertainment</h2>
+            <div class="category-count">2 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>IMDb</h3>
+              <span class="badge">Movies</span>
+            </div>
+            <p>
+              Free movie and TV database with ratings, reviews, and information.
+            </p>
+            <ul class="banner-features">
+              <li>50M+ titles</li>
+              <li>Ratings</li>
+              <li>Cast & crew</li>
+              <li>Watchlist</li>
+            </ul>
+            <a href="https://www.imdb.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Tubi</h3>
+              <span class="badge">Streaming</span>
+            </div>
+            <p>Free streaming service with thousands of movies and TV shows.</p>
+            <ul class="banner-features">
+              <li>Free streaming</li>
+              <li>No subscription</li>
+              <li>Ads included</li>
+              <li>Large catalog</li>
+            </ul>
+            <a href="https://www.tubi.tv" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 1: Video Creation & Editing (4 websites) -->
+      <div class="category-section" id="video">
+        <div class="category-header">
+          <div
+            class="category-icon media"
+            style="background: linear-gradient(135deg, #f97316, #06b6d4)"
+          >
+            🎥
+          </div>
+          <div>
+            <h2>Video Creation & Editing</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>DaVinci Resolve</h3>
+              <span class="badge">Professional</span>
+            </div>
+            <p>
+              Professional video editing software with free and paid versions.
+            </p>
+            <ul class="banner-features">
+              <li>Professional editing</li>
+              <li>Color grading</li>
+              <li>Fusion effects</li>
+              <li>Free tier</li>
+            </ul>
+            <a
+              href="https://www.blackmagicdesign.com/products/davinciresolve/"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Shotcut</h3>
+              <span class="badge">Open Source</span>
+            </div>
+            <p>Free, open-source video editor with extensive format support.</p>
+            <ul class="banner-features">
+              <li>Open source</li>
+              <li>All formats</li>
+              <li>Effects & filters</li>
+              <li>Multi-track</li>
+            </ul>
+            <a
+              href="https://www.shotcut.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>OpenShot</h3>
+              <span class="badge">Beginner</span>
+            </div>
+            <p>Simple, user-friendly open-source video editor for beginners.</p>
+            <ul class="banner-features">
+              <li>Easy to use</li>
+              <li>Open source</li>
+              <li>Effects</li>
+              <li>Transitions</li>
+            </ul>
+            <a
+              href="https://www.openshot.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Kdenlive</h3>
+              <span class="badge">Linux</span>
+            </div>
+            <p>Free, open-source video editor with professional features.</p>
+            <ul class="banner-features">
+              <li>Free software</li>
+              <li>Multi-track</li>
+              <li>Audio mixing</li>
+              <li>Cross-platform</li>
+            </ul>
+            <a href="https://kdenlive.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 2: Collaboration & Communication (4 websites) -->
+      <div class="category-section" id="collaboration">
+        <div class="category-header">
+          <div
+            class="category-icon academic"
+            style="background: linear-gradient(135deg, #10b981, #f97316)"
+          >
+            💬
+          </div>
+          <div>
+            <h2>Collaboration & Communication</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Jitsi Meet</h3>
+              <span class="badge">Video Call</span>
+            </div>
+            <p>Free, open-source video conferencing without login required.</p>
+            <ul class="banner-features">
+              <li>No account needed</li>
+              <li>Open source</li>
+              <li>Screen sharing</li>
+              <li>Recording</li>
+            </ul>
+            <a href="https://meet.jitsi.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Mattermost</h3>
+              <span class="badge">Team Chat</span>
+            </div>
+            <p>Open-source team communication and collaboration platform.</p>
+            <ul class="banner-features">
+              <li>Team chat</li>
+              <li>Self-hosted</li>
+              <li>File sharing</li>
+              <li>Integrations</li>
+            </ul>
+            <a href="https://mattermost.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Etherpad</h3>
+              <span class="badge">Collab Doc</span>
+            </div>
+            <p>Free, open-source collaborative document editor in real-time.</p>
+            <ul class="banner-features">
+              <li>Real-time collab</li>
+              <li>Open source</li>
+              <li>No account</li>
+              <li>Export options</li>
+            </ul>
+            <a href="https://etherpad.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Zulip</h3>
+              <span class="badge">Chat</span>
+            </div>
+            <p>Open-source team chat with organized conversation threads.</p>
+            <ul class="banner-features">
+              <li>Organized chat</li>
+              <li>Open source</li>
+              <li>Self-hosted</li>
+              <li>Mobile apps</li>
+            </ul>
+            <a href="https://zulip.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 3: Data Science & Analytics (4 websites) -->
+      <div class="category-section" id="data">
+        <div class="category-header">
+          <div
+            class="category-icon research"
+            style="background: linear-gradient(135deg, #a855f7, #06b6d4)"
+          >
+            📊
+          </div>
+          <div>
+            <h2>Data Science & Analytics</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Jupyter</h3>
+              <span class="badge">Notebooks</span>
+            </div>
+            <p>Open-source notebook environment for data science and coding.</p>
+            <ul class="banner-features">
+              <li>Interactive</li>
+              <li>Multi-language</li>
+              <li>Visualization</li>
+              <li>Open source</li>
+            </ul>
+            <a href="https://jupyter.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Pandas</h3>
+              <span class="badge">Data</span>
+            </div>
+            <p>
+              Open-source data analysis and manipulation library for Python.
+            </p>
+            <ul class="banner-features">
+              <li>Data manipulation</li>
+              <li>Analysis tools</li>
+              <li>Python library</li>
+              <li>Open source</li>
+            </ul>
+            <a
+              href="https://pandas.pydata.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Tableau Public</h3>
+              <span class="badge">Viz</span>
+            </div>
+            <p>
+              Free data visualization tool for creating interactive dashboards.
+            </p>
+            <ul class="banner-features">
+              <li>Data visualization</li>
+              <li>Dashboards</li>
+              <li>Public sharing</li>
+              <li>Free tier</li>
+            </ul>
+            <a
+              href="https://public.tableau.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Metabase</h3>
+              <span class="badge">Dashboard</span>
+            </div>
+            <p>Open-source business intelligence and analytics platform.</p>
+            <ul class="banner-features">
+              <li>Dashboards</li>
+              <li>Open source</li>
+              <li>Self-hosted</li>
+              <li>SQL queries</li>
+            </ul>
+            <a
+              href="https://www.metabase.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 4: Language Learning (4 websites) -->
+      <div class="category-section" id="languages">
+        <div class="category-header">
+          <div
+            class="category-icon learning"
+            style="background: linear-gradient(135deg, #f59e0b, #ec4899)"
+          >
+            🌍
+          </div>
+          <div>
+            <h2>Language Learning</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Duolingo</h3>
+              <span class="badge">Languages</span>
+            </div>
+            <p>Gamified language learning with free and paid options.</p>
+            <ul class="banner-features">
+              <li>40+ languages</li>
+              <li>Gamified</li>
+              <li>Free tier</li>
+              <li>Mobile & web</li>
+            </ul>
+            <a
+              href="https://www.duolingo.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Anki</h3>
+              <span class="badge">Flashcards</span>
+            </div>
+            <p>Free, open-source flashcard software for learning languages.</p>
+            <ul class="banner-features">
+              <li>Spaced repetition</li>
+              <li>Open source</li>
+              <li>Customizable</li>
+              <li>Deck sharing</li>
+            </ul>
+            <a
+              href="https://apps.ankiweb.net"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Memrise</h3>
+              <span class="badge">Community</span>
+            </div>
+            <p>Free language learning with user-created courses.</p>
+            <ul class="banner-features">
+              <li>Community courses</li>
+              <li>Vocabulary focus</li>
+              <li>Free & paid</li>
+              <li>Mobile app</li>
+            </ul>
+            <a
+              href="https://www.memrise.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Forvo</h3>
+              <span class="badge">Pronunciation</span>
+            </div>
+            <p>
+              Free pronunciation guide with native speakers for 500+ languages.
+            </p>
+            <ul class="banner-features">
+              <li>500+ languages</li>
+              <li>Native speakers</li>
+              <li>Free access</li>
+              <li>No login</li>
+            </ul>
+            <a href="https://forvo.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 5: Health & Fitness (4 websites) -->
+      <div class="category-section" id="health">
+        <div class="category-header">
+          <div
+            class="category-icon textbook"
+            style="background: linear-gradient(135deg, #10b981, #f59e0b)"
+          >
+            💪
+          </div>
+          <div>
+            <h2>Health & Fitness Resources</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Muscle Wiki</h3>
+              <span class="badge">Exercises</span>
+            </div>
+            <p>
+              Free exercise database with videos and muscle targeting
+              information.
+            </p>
+            <ul class="banner-features">
+              <li>Exercise library</li>
+              <li>Video guides</li>
+              <li>Muscle focus</li>
+              <li>Free access</li>
+            </ul>
+            <a href="https://musclewiki.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Nutrition Facts</h3>
+              <span class="badge">Food Info</span>
+            </div>
+            <p>
+              Free nutrition database with 10,000+ foods and nutritional info.
+            </p>
+            <ul class="banner-features">
+              <li>Food database</li>
+              <li>Nutrition info</li>
+              <li>Calorie data</li>
+              <li>No login</li>
+            </ul>
+            <a
+              href="https://www.nutritionix.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>OpenFit</h3>
+              <span class="badge">Workouts</span>
+            </div>
+            <p>Free fitness and workout plans with video guidance.</p>
+            <ul class="banner-features">
+              <li>Workout plans</li>
+              <li>Video guides</li>
+              <li>Free content</li>
+              <li>Multiple styles</li>
+            </ul>
+            <a
+              href="https://www.openfit.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>MyFitnessPal</h3>
+              <span class="badge">Tracking</span>
+            </div>
+            <p>
+              Free fitness tracking app for calories, workouts, and progress.
+            </p>
+            <ul class="banner-features">
+              <li>Calorie tracking</li>
+              <li>Workouts</li>
+              <li>Free tier</li>
+              <li>Mobile app</li>
+            </ul>
+            <a
+              href="https://www.myfitnesspal.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 6: Web Development Tools (4 websites) -->
+      <div class="category-section" id="webdev">
+        <div class="category-header">
+          <div
+            class="category-icon tech"
+            style="background: linear-gradient(135deg, #ec4899, #0ea5e9)"
+          >
+            ⚡
+          </div>
+          <div>
+            <h2>Web Development Tools</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>CodePen</h3>
+              <span class="badge">Showcase</span>
+            </div>
+            <p>Free code editor and showcase for HTML, CSS, and JavaScript.</p>
+            <ul class="banner-features">
+              <li>Live preview</li>
+              <li>Share code</li>
+              <li>Free tier</li>
+              <li>Community</li>
+            </ul>
+            <a href="https://codepen.io" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>JSFiddle</h3>
+              <span class="badge">Testing</span>
+            </div>
+            <p>Free online editor for testing HTML, CSS, and JavaScript.</p>
+            <ul class="banner-features">
+              <li>Code testing</li>
+              <li>Live preview</li>
+              <li>Shareble</li>
+              <li>No login</li>
+            </ul>
+            <a href="https://jsfiddle.net" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Netlify</h3>
+              <span class="badge">Hosting</span>
+            </div>
+            <p>Free static site hosting with continuous deployment.</p>
+            <ul class="banner-features">
+              <li>Free hosting</li>
+              <li>CI/CD</li>
+              <li>Custom domain</li>
+              <li>HTTPS</li>
+            </ul>
+            <a
+              href="https://www.netlify.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Vercel</h3>
+              <span class="badge">Hosting</span>
+            </div>
+            <p>Free frontend hosting optimized for Next.js and frameworks.</p>
+            <ul class="banner-features">
+              <li>Static & dynamic</li>
+              <li>Auto deployment</li>
+              <li>Free tier</li>
+              <li>Edge functions</li>
+            </ul>
+            <a href="https://vercel.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 7: Drawing & Art Tools (4 websites) -->
+      <div class="category-section" id="art">
+        <div class="category-header">
+          <div
+            class="category-icon design"
+            style="background: linear-gradient(135deg, #f97316, #a855f7)"
+          >
+            🎭
+          </div>
+          <div>
+            <h2>Drawing & Digital Art</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Krita</h3>
+              <span class="badge">Painting</span>
+            </div>
+            <p>
+              Free, open-source digital painting software for professionals.
+            </p>
+            <ul class="banner-features">
+              <li>Digital painting</li>
+              <li>Open source</li>
+              <li>Brush engine</li>
+              <li>Animation</li>
+            </ul>
+            <a href="https://krita.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Rebelle</h3>
+              <span class="badge">Realistic</span>
+            </div>
+            <p>
+              Free trial for hyper-realistic painting and sketching software.
+            </p>
+            <ul class="banner-features">
+              <li>Realistic paints</li>
+              <li>Water & oil</li>
+              <li>Free trial</li>
+              <li>Advanced</li>
+            </ul>
+            <a
+              href="https://www.escapemotions.com/products/rebelle/"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>MediBang Paint</h3>
+              <span class="badge">Manga</span>
+            </div>
+            <p>
+              Free digital painting app designed for manga and comic creation.
+            </p>
+            <ul class="banner-features">
+              <li>Manga tools</li>
+              <li>Comic panels</li>
+              <li>Free & paid</li>
+              <li>Cloud features</li>
+            </ul>
+            <a
+              href="https://medibangpaint.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Sketchbook</h3>
+              <span class="badge">Drawing</span>
+            </div>
+            <p>Free Autodesk Sketchbook for digital sketching and drawing.</p>
+            <ul class="banner-features">
+              <li>Drawing tools</li>
+              <li>Professional brushes</li>
+              <li>Free version</li>
+              <li>Cloud sync</li>
+            </ul>
+            <a
+              href="https://www.sketchbook.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 8: Cybersecurity & Privacy (4 websites) -->
+      <div class="category-section" id="security">
+        <div class="category-header">
+          <div
+            class="category-icon tech"
+            style="background: linear-gradient(135deg, #ef4444, #0ea5e9)"
+          >
+            🔐
+          </div>
+          <div>
+            <h2>Cybersecurity & Privacy Tools</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Bitwarden</h3>
+              <span class="badge">Password</span>
+            </div>
+            <p>
+              Free, open-source password manager for secure credential storage.
+            </p>
+            <ul class="banner-features">
+              <li>Password storage</li>
+              <li>Open source</li>
+              <li>Cross-platform</li>
+              <li>Cloud & self-hosted</li>
+            </ul>
+            <a href="https://bitwarden.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>VeraCrypt</h3>
+              <span class="badge">Encryption</span>
+            </div>
+            <p>
+              Free, open-source disk encryption software for data protection.
+            </p>
+            <ul class="banner-features">
+              <li>Full disk encryption</li>
+              <li>Open source</li>
+              <li>Portable volumes</li>
+              <li>Multi-OS</li>
+            </ul>
+            <a
+              href="https://www.veracrypt.fr"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Tor Browser</h3>
+              <span class="badge">Privacy</span>
+            </div>
+            <p>Free browser for anonymous web browsing and privacy.</p>
+            <ul class="banner-features">
+              <li>Anonymous browsing</li>
+              <li>Open source</li>
+              <li>Multi-layer</li>
+              <li>No tracking</li>
+            </ul>
+            <a
+              href="https://www.torproject.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Have I Been Pwned</h3>
+              <span class="badge">Check</span>
+            </div>
+            <p>Free tool to check if your email has been in a data breach.</p>
+            <ul class="banner-features">
+              <li>Breach check</li>
+              <li>Email lookup</li>
+              <li>Free service</li>
+              <li>No login</li>
+            </ul>
+            <a
+              href="https://haveibeenpwned.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Specialized Study & Research Tools (2 sites) -->
+      <div class="category-section" id="specialized">
+        <div class="category-header">
+          <div class="category-icon specialized">🔍</div>
+          <div>
+            <h2>Specialized Tools</h2>
+            <div class="category-count">2 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Scholarcy</h3>
+              <span class="badge">Summaries</span>
+            </div>
+            <p>AI tool that summarizes papers into flashcards for learning.</p>
+            <ul class="banner-features">
+              <li>Paper summaries</li>
+              <li>Flashcards</li>
+              <li>Key concepts</li>
+              <li>Browser ext</li>
+            </ul>
+            <a
+              href="https://www.scholarcy.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Connected Papers</h3>
+              <span class="badge">Research</span>
+            </div>
+            <p>
+              Explore research papers visually through connections and
+              references.
+            </p>
+            <ul class="banner-features">
+              <li>Visual graph</li>
+              <li>Paper connections</li>
+              <li>Citation flow</li>
+              <li>Free tier</li>
+            </ul>
+            <a
+              href="https://www.connectedpapers.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 1: Cloud Storage & Backup (4 websites) -->
+      <div class="category-section" id="storage">
+        <div class="category-header">
+          <div
+            class="category-icon document"
+            style="background: linear-gradient(135deg, #06b6d4, #10b981)"
+          >
+            ☁️
+          </div>
+          <div>
+            <h2>Cloud Storage & Backup</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Mega</h3>
+              <span class="badge">20GB</span>
+            </div>
+            <p>Free cloud storage with 20GB of end-to-end encrypted storage.</p>
+            <ul class="banner-features">
+              <li>20GB free</li>
+              <li>End-to-end encryption</li>
+              <li>File sharing</li>
+              <li>Cross-platform</li>
+            </ul>
+            <a href="https://mega.nz" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Sync.com</h3>
+              <span class="badge">5GB</span>
+            </div>
+            <p>Free encrypted cloud storage with privacy-first approach.</p>
+            <ul class="banner-features">
+              <li>5GB free</li>
+              <li>Encrypted</li>
+              <li>Canadian privacy</li>
+              <li>Versioning</li>
+            </ul>
+            <a href="https://www.sync.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Nextcloud</h3>
+              <span class="badge">Self-Hosted</span>
+            </div>
+            <p>Open-source cloud platform for file sync and collaboration.</p>
+            <ul class="banner-features">
+              <li>Self-hosted</li>
+              <li>Open source</li>
+              <li>Full control</li>
+              <li>Collaboration</li>
+            </ul>
+            <a href="https://nextcloud.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Tresorit</h3>
+              <span class="badge">Free Trial</span>
+            </div>
+            <p>Enterprise-grade encrypted cloud storage with free trial.</p>
+            <ul class="banner-features">
+              <li>End-to-end encryption</li>
+              <li>Zero-knowledge</li>
+              <li>Enterprise security</li>
+              <li>Free trial</li>
+            </ul>
+            <a href="https://tresorit.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 2: Ebooks & Reading (4 websites) -->
+      <div class="category-section" id="reading">
+        <div class="category-header">
+          <div
+            class="category-icon ebook"
+            style="background: linear-gradient(135deg, #a855f7, #f97316)"
+          >
+            📚
+          </div>
+          <div>
+            <h2>E-Reading & Book Communities</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Goodreads</h3>
+              <span class="badge">Community</span>
+            </div>
+            <p>
+              Free community for book lovers with ratings, reviews, and
+              recommendations.
+            </p>
+            <ul class="banner-features">
+              <li>Book database</li>
+              <li>Social network</li>
+              <li>Reviews & ratings</li>
+              <li>Reading lists</li>
+            </ul>
+            <a
+              href="https://www.goodreads.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Wattpad</h3>
+              <span class="badge">Stories</span>
+            </div>
+            <p>
+              Free platform for reading and writing stories from independent
+              authors.
+            </p>
+            <ul class="banner-features">
+              <li>Story library</li>
+              <li>Community stories</li>
+              <li>Interactive</li>
+              <li>Mobile app</li>
+            </ul>
+            <a
+              href="https://www.wattpad.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Libby</h3>
+              <span class="badge">Library</span>
+            </div>
+            <p>Free app to borrow ebooks and audiobooks from your library.</p>
+            <ul class="banner-features">
+              <li>Library access</li>
+              <li>Free borrowing</li>
+              <li>Ebooks & audio</li>
+              <li>Multiple holds</li>
+            </ul>
+            <a
+              href="https://www.libbyapp.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>BookStack</h3>
+              <span class="badge">Wiki</span>
+            </div>
+            <p>
+              Open-source wiki system for organizing knowledge and
+              documentation.
+            </p>
+            <ul class="banner-features">
+              <li>Self-hosted wiki</li>
+              <li>Open source</li>
+              <li>Full control</li>
+              <li>Markdown support</li>
+            </ul>
+            <a
+              href="https://www.bookstackapp.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 3: Podcast & Audio (4 websites) -->
+      <div class="category-section" id="podcasts">
+        <div class="category-header">
+          <div
+            class="category-icon audio"
+            style="background: linear-gradient(135deg, #ec4899, #f59e0b)"
+          >
+            🎙️
+          </div>
+          <div>
+            <h2>Podcasts & Audio Content</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Spotify Podcasts</h3>
+              <span class="badge">Free</span>
+            </div>
+            <p>Free podcast streaming with millions of shows available.</p>
+            <ul class="banner-features">
+              <li>Free tier</li>
+              <li>Millions of shows</li>
+              <li>No download needed</li>
+              <li>Personalized</li>
+            </ul>
+            <a
+              href="https://open.spotify.com/search/podcasts"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Podcast Addict</h3>
+              <span class="badge">Android</span>
+            </div>
+            <p>Free, open-source podcast player for Android devices.</p>
+            <ul class="banner-features">
+              <li>Open source</li>
+              <li>Android app</li>
+              <li>Download episodes</li>
+              <li>RSS support</li>
+            </ul>
+            <a
+              href="https://podcastaddict.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Anchor</h3>
+              <span class="badge">Create</span>
+            </div>
+            <p>Free platform to create, host, and distribute podcasts.</p>
+            <ul class="banner-features">
+              <li>Free hosting</li>
+              <li>Distribution</li>
+              <li>Recording tools</li>
+              <li>Monetization</li>
+            </ul>
+            <a href="https://anchor.fm" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Podbean</h3>
+              <span class="badge">Platform</span>
+            </div>
+            <p>Free podcast hosting and analytics platform.</p>
+            <ul class="banner-features">
+              <li>Free hosting</li>
+              <li>Analytics</li>
+              <li>Distribution</li>
+              <li>Monetization</li>
+            </ul>
+            <a
+              href="https://www.podbean.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 4: Email & Messaging (4 websites) -->
+      <div class="category-section" id="email">
+        <div class="category-header">
+          <div
+            class="category-icon academic"
+            style="background: linear-gradient(135deg, #0ea5e9, #a855f7)"
+          >
+            ✉️
+          </div>
+          <div>
+            <h2>Email & Secure Messaging</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>ProtonMail</h3>
+              <span class="badge">Encrypted</span>
+            </div>
+            <p>Free encrypted email service with privacy-first approach.</p>
+            <ul class="banner-features">
+              <li>End-to-end encryption</li>
+              <li>Free tier</li>
+              <li>No tracking</li>
+              <li>Swiss privacy</li>
+            </ul>
+            <a href="https://protonmail.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Tutanota</h3>
+              <span class="badge">Privacy</span>
+            </div>
+            <p>Free encrypted email with privacy as default.</p>
+            <ul class="banner-features">
+              <li>Encrypted email</li>
+              <li>Free tier</li>
+              <li>Calendar encrypted</li>
+              <li>Open source</li>
+            </ul>
+            <a href="https://tutanota.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Signal</h3>
+              <span class="badge">Messaging</span>
+            </div>
+            <p>Free, open-source encrypted messaging app for privacy.</p>
+            <ul class="banner-features">
+              <li>End-to-end encryption</li>
+              <li>Open source</li>
+              <li>No ads</li>
+              <li>Calls & texts</li>
+            </ul>
+            <a href="https://www.signal.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Briar</h3>
+              <span class="badge">Offline</span>
+            </div>
+            <p>Open-source encrypted messaging that works without internet.</p>
+            <ul class="banner-features">
+              <li>Works offline</li>
+              <li>Open source</li>
+              <li>Encrypted</li>
+              <li>No servers</li>
+            </ul>
+            <a
+              href="https://briarproject.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 5: Browser & Extensions (4 websites) -->
+      <div class="category-section" id="browser">
+        <div class="category-header">
+          <div
+            class="category-icon tech"
+            style="background: linear-gradient(135deg, #f97316, #ec4899)"
+          >
+            🌐
+          </div>
+          <div>
+            <h2>Browser & Extensions</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Firefox</h3>
+              <span class="badge">Browser</span>
+            </div>
+            <p>Free, open-source web browser with privacy focus.</p>
+            <ul class="banner-features">
+              <li>Open source</li>
+              <li>Privacy features</li>
+              <li>Fast & secure</li>
+              <li>Customizable</li>
+            </ul>
+            <a
+              href="https://www.mozilla.org/firefox/"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Brave</h3>
+              <span class="badge">Privacy</span>
+            </div>
+            <p>Free browser with built-in privacy and ad blocking.</p>
+            <ul class="banner-features">
+              <li>Ad blocking</li>
+              <li>Privacy features</li>
+              <li>Rewards program</li>
+              <li>Fast</li>
+            </ul>
+            <a href="https://brave.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>uBlock Origin</h3>
+              <span class="badge">Blocker</span>
+            </div>
+            <p>Free, open-source ad blocker and privacy extension.</p>
+            <ul class="banner-features">
+              <li>Ad blocking</li>
+              <li>Tracker blocking</li>
+              <li>Open source</li>
+              <li>Lightweight</li>
+            </ul>
+            <a
+              href="https://ublockorigin.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Privacy Badger</h3>
+              <span class="badge">Privacy</span>
+            </div>
+            <p>Free browser extension that blocks hidden trackers.</p>
+            <ul class="banner-features">
+              <li>Tracker blocking</li>
+              <li>Learning algorithm</li>
+              <li>Open source</li>
+              <li>No whitelist</li>
+            </ul>
+            <a
+              href="https://privacybadger.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 6: Gaming & Entertainment (4 websites) -->
+      <div class="category-section" id="gaming">
+        <div class="category-header">
+          <div
+            class="category-icon media"
+            style="background: linear-gradient(135deg, #10b981, #f97316)"
+          >
+            🎮
+          </div>
+          <div>
+            <h2>Gaming & Entertainment</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Steam</h3>
+              <span class="badge">Games</span>
+            </div>
+            <p>Largest PC gaming platform with thousands of free games.</p>
+            <ul class="banner-features">
+              <li>Thousands of games</li>
+              <li>Free to play</li>
+              <li>Community</li>
+              <li>Workshop mods</li>
+            </ul>
+            <a
+              href="https://steampowered.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>itch.io</h3>
+              <span class="badge">Indie</span>
+            </div>
+            <p>Indie game platform with thousands of free games.</p>
+            <ul class="banner-features">
+              <li>Indie games</li>
+              <li>Many free</li>
+              <li>Game jam</li>
+              <li>Developer friendly</li>
+            </ul>
+            <a href="https://itch.io" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Open Game Art</h3>
+              <span class="badge">Assets</span>
+            </div>
+            <p>Free game assets including sprites, sounds, and music.</p>
+            <ul class="banner-features">
+              <li>Game sprites</li>
+              <li>Sound effects</li>
+              <li>Music</li>
+              <li>Open licenses</li>
+            </ul>
+            <a
+              href="https://opengameart.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Godot Engine</h3>
+              <span class="badge">Game Dev</span>
+            </div>
+            <p>Free, open-source game engine for creating 2D and 3D games.</p>
+            <ul class="banner-features">
+              <li>Game development</li>
+              <li>Open source</li>
+              <li>2D & 3D</li>
+              <li>Cross-platform</li>
+            </ul>
+            <a
+              href="https://godotengine.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 7: Music Production (4 websites) -->
+      <div class="category-section" id="music">
+        <div class="category-header">
+          <div
+            class="category-icon audio"
+            style="background: linear-gradient(135deg, #a855f7, #10b981)"
+          >
+            🎼
+          </div>
+          <div>
+            <h2>Music Production & Tools</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Audacity</h3>
+              <span class="badge">Editor</span>
+            </div>
+            <p>Free, open-source audio editor for recording and editing.</p>
+            <ul class="banner-features">
+              <li>Audio editing</li>
+              <li>Recording</li>
+              <li>Effects</li>
+              <li>Open source</li>
+            </ul>
+            <a
+              href="https://www.audacityteam.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>LMMS</h3>
+              <span class="badge">DAW</span>
+            </div>
+            <p>
+              Free, open-source digital audio workstation for music production.
+            </p>
+            <ul class="banner-features">
+              <li>Music production</li>
+              <li>Open source</li>
+              <li>Instruments</li>
+              <li>Beat maker</li>
+            </ul>
+            <a href="https://lmms.io" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>MuseScore</h3>
+              <span class="badge">Notation</span>
+            </div>
+            <p>Free music notation software for composing and publishing.</p>
+            <ul class="banner-features">
+              <li>Music notation</li>
+              <li>Open source</li>
+              <li>Playback</li>
+              <li>Publishing</li>
+            </ul>
+            <a href="https://musescore.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Sonic Pi</h3>
+              <span class="badge">Learning</span>
+            </div>
+            <p>
+              Free, open-source music programming for learning and creating.
+            </p>
+            <ul class="banner-features">
+              <li>Live coding</li>
+              <li>Educational</li>
+              <li>Open source</li>
+              <li>Music creation</li>
+            </ul>
+            <a href="https://sonic-pi.net" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 8: Document Conversion (4 websites) -->
+      <div class="category-section" id="conversion">
+        <div class="category-header">
+          <div
+            class="category-icon document"
+            style="background: linear-gradient(135deg, #f59e0b, #ec4899)"
+          >
+            🔄
+          </div>
+          <div>
+            <h2>Document & File Conversion</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>CloudConvert</h3>
+              <span class="badge">Converter</span>
+            </div>
+            <p>Free file converter supporting 200+ formats.</p>
+            <ul class="banner-features">
+              <li>200+ formats</li>
+              <li>Batch conversion</li>
+              <li>Fast processing</li>
+              <li>No login required</li>
+            </ul>
+            <a
+              href="https://cloudconvert.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Zamzar</h3>
+              <span class="badge">File</span>
+            </div>
+            <p>Free online file converter for documents, images, and videos.</p>
+            <ul class="banner-features">
+              <li>Many formats</li>
+              <li>Easy to use</li>
+              <li>Email results</li>
+              <li>No software</li>
+            </ul>
+            <a href="https://www.zamzar.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>PDF24</h3>
+              <span class="badge">PDF</span>
+            </div>
+            <p>Free PDF tools for editing, converting, and merging PDFs.</p>
+            <ul class="banner-features">
+              <li>PDF editing</li>
+              <li>Conversion</li>
+              <li>Merge & split</li>
+              <li>No login</li>
+            </ul>
+            <a href="https://www.pdf24.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Pandoc</h3>
+              <span class="badge">Markup</span>
+            </div>
+            <p>Free, open-source document converter for markup formats.</p>
+            <ul class="banner-features">
+              <li>Markup conversion</li>
+              <li>Open source</li>
+              <li>Command-line</li>
+              <li>Batch processing</li>
+            </ul>
+            <a href="https://pandoc.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 9: Astronomy & Space (2 websites) -->
+      <div class="category-section" id="astronomy">
+        <div class="category-header">
+          <div
+            class="category-icon research"
+            style="background: linear-gradient(135deg, #06b6d4, #a855f7)"
+          >
+            🚀
+          </div>
+          <div>
+            <h2>Astronomy & Space Resources</h2>
+            <div class="category-count">2 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Stellarium</h3>
+              <span class="badge">Planetarium</span>
+            </div>
+            <p>Free, open-source planetarium software showing the night sky.</p>
+            <ul class="banner-features">
+              <li>Night sky view</li>
+              <li>Open source</li>
+              <li>Real-time</li>
+              <li>Desktop & mobile</li>
+            </ul>
+            <a href="https://stellarium.org" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>NASA Open Portal</h3>
+              <span class="badge">Space</span>
+            </div>
+            <p>
+              NASA's free images, data, and resources about space and Earth.
+            </p>
+            <ul class="banner-features">
+              <li>NASA imagery</li>
+              <li>Datasets</li>
+              <li>Research data</li>
+              <li>Public domain</li>
+            </ul>
+            <a href="https://api.nasa.gov" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY 10: Chemistry & Biology (2 websites) -->
+      <div class="category-section" id="science">
+        <div class="category-header">
+          <div
+            class="category-icon research"
+            style="background: linear-gradient(135deg, #10b981, #0ea5e9)"
+          >
+            🔬
+          </div>
+          <div>
+            <h2>Chemistry & Biology Resources</h2>
+            <div class="category-count">2 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>NCBI PubMed</h3>
+              <span class="badge">Biology</span>
+            </div>
+            <p>Free access to 34M+ biomedical citations and abstracts.</p>
+            <ul class="banner-features">
+              <li>34M+ articles</li>
+              <li>Free access</li>
+              <li>Advanced search</li>
+              <li>Full texts</li>
+            </ul>
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>ChemSpider</h3>
+              <span class="badge">Chemistry</span>
+            </div>
+            <p>Free chemical database with millions of compounds.</p>
+            <ul class="banner-features">
+              <li>Chemical structure</li>
+              <li>Properties</li>
+              <li>Spectral data</li>
+              <li>Free search</li>
+            </ul>
+            <a
+              href="https://www.chemspider.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY: Programming & Coding (6 websites) -->
+      <div class="category-section" id="coding">
+        <div class="category-header">
+          <div
+            class="category-icon"
+            style="background: linear-gradient(135deg, #0ea5e9, #f97316)"
+          >
+            💻
+          </div>
+          <div>
+            <h2>Programming & Coding</h2>
+            <div class="category-count">6 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>FreeCodeCamp</h3>
+              <span class="badge">Courses</span>
+            </div>
+            <p>
+              Completely free coding courses including full JavaScript, Python,
+              and web development.
+            </p>
+            <ul class="banner-features">
+              <li>Full courses</li>
+              <li>No paywall</li>
+              <li>YouTube library</li>
+              <li>Certificates</li>
+            </ul>
+            <a
+              href="https://www.freecodecamp.org"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Codecademy</h3>
+              <span class="badge">Interactive</span>
+            </div>
+            <p>
+              Interactive coding platform with free tier for learning
+              programming basics.
+            </p>
+            <ul class="banner-features">
+              <li>Interactive</li>
+              <li>Free tier</li>
+              <li>Multiple languages</li>
+              <li>Projects</li>
+            </ul>
+            <a
+              href="https://www.codecademy.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>HackerRank</h3>
+              <span class="badge">Challenges</span>
+            </div>
+            <p>
+              Free coding challenges and interview prep for programmers of all
+              levels.
+            </p>
+            <ul class="banner-features">
+              <li>Coding problems</li>
+              <li>Interview prep</li>
+              <li>Free tier</li>
+              <li>Competitions</li>
+            </ul>
+            <a
+              href="https://www.hackerrank.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>LeetCode</h3>
+              <span class="badge">DSA</span>
+            </div>
+            <p>
+              Free problem solving platform for data structures and algorithms
+              practice.
+            </p>
+            <ul class="banner-features">
+              <li>DSA problems</li>
+              <li>Free tier</li>
+              <li>Solutions</li>
+              <li>Interview prep</li>
+            </ul>
+            <a href="https://leetcode.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>GitHub</h3>
+              <span class="badge">Repository</span>
+            </div>
+            <p>
+              Free code hosting with unlimited public and private repositories
+              for learning.
+            </p>
+            <ul class="banner-features">
+              <li>Free repos</li>
+              <li>Version control</li>
+              <li>Collaboration</li>
+              <li>GitHub Pages</li>
+            </ul>
+            <a href="https://github.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>DevDocs</h3>
+              <span class="badge">Documentation</span>
+            </div>
+            <p>
+              Free offline documentation for 500+ programming languages and
+              libraries.
+            </p>
+            <ul class="banner-features">
+              <li>500+ docs</li>
+              <li>Offline access</li>
+              <li>Searchable</li>
+              <li>Free forever</li>
+            </ul>
+            <a href="https://devdocs.io" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY: Video Streaming (4 websites) -->
+      <div class="category-section" id="streaming">
+        <div class="category-header">
+          <div
+            class="category-icon"
+            style="background: linear-gradient(135deg, #f97316, #ec4899)"
+          >
+            📺
+          </div>
+          <div>
+            <h2>Free Video Streaming</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Tubi</h3>
+              <span class="badge">Movies</span>
+            </div>
+            <p>
+              Free streaming service with thousands of movies and TV shows with
+              ads.
+            </p>
+            <ul class="banner-features">
+              <li>Thousands of shows</li>
+              <li>Free with ads</li>
+              <li>No login</li>
+              <li>Cross-platform</li>
+            </ul>
+            <a href="https://www.tubi.tv" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Pluto TV</h3>
+              <span class="badge">Live</span>
+            </div>
+            <p>Free live TV and on-demand streaming with tons of channels.</p>
+            <ul class="banner-features">
+              <li>Live TV</li>
+              <li>On-demand</li>
+              <li>Free forever</li>
+              <li>Many channels</li>
+            </ul>
+            <a href="https://www.pluto.tv" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>IMDb TV</h3>
+              <span class="badge">Amazon</span>
+            </div>
+            <p>
+              Free streaming service with movies and TV shows powered by Amazon.
+            </p>
+            <ul class="banner-features">
+              <li>Free content</li>
+              <li>Amazon integration</li>
+              <li>Ads</li>
+              <li>Good library</li>
+            </ul>
+            <a
+              href="https://www.imdb.com/tv/"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Kanopy</h3>
+              <span class="badge">Library</span>
+            </div>
+            <p>
+              Free streaming through library cards with documentaries and films.
+            </p>
+            <ul class="banner-features">
+              <li>Library access</li>
+              <li>Quality content</li>
+              <li>Documentaries</li>
+              <li>Free</li>
+            </ul>
+            <a href="https://www.kanopy.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY: Web Hosting (4 websites) -->
+      <div class="category-section" id="hosting">
+        <div class="category-header">
+          <div
+            class="category-icon"
+            style="background: linear-gradient(135deg, #06b6d4, #10b981)"
+          >
+            🌐
+          </div>
+          <div>
+            <h2>Free Web Hosting</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>GitHub Pages</h3>
+              <span class="badge">Static</span>
+            </div>
+            <p>Free static site hosting directly from GitHub repositories.</p>
+            <ul class="banner-features">
+              <li>Free hosting</li>
+              <li>Custom domain</li>
+              <li>SSL included</li>
+              <li>Git deployment</li>
+            </ul>
+            <a
+              href="https://pages.github.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Firebase Hosting</h3>
+              <span class="badge">Google</span>
+            </div>
+            <p>Google's fast and secure hosting with generous free tier.</p>
+            <ul class="banner-features">
+              <li>CDN included</li>
+              <li>SSL free</li>
+              <li>Database free</li>
+              <li>Google-backed</li>
+            </ul>
+            <a
+              href="https://firebase.google.com/products/hosting/"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Replit</h3>
+              <span class="badge">IDE</span>
+            </div>
+            <p>Free cloud IDE and hosting for web apps, Python, and more.</p>
+            <ul class="banner-features">
+              <li>IDE included</li>
+              <li>Hosting</li>
+              <li>Collaboration</li>
+              <li>Free tier</li>
+            </ul>
+            <a href="https://replit.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Surge</h3>
+              <span class="badge">Deploy</span>
+            </div>
+            <p>
+              Fastest way to publish web apps with free tier and custom domain.
+            </p>
+            <ul class="banner-features">
+              <li>Instant deploy</li>
+              <li>CLI included</li>
+              <li>Custom domain</li>
+              <li>Free forever</li>
+            </ul>
+            <a href="https://surge.sh" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY: Graphic Design Resources (4 websites) -->
+      <div class="category-section" id="graphics">
+        <div class="category-header">
+          <div
+            class="category-icon"
+            style="background: linear-gradient(135deg, #a855f7, #f97316)"
+          >
+            🎨
+          </div>
+          <div>
+            <h2>Graphic Design Resources</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>DaFont</h3>
+              <span class="badge">Fonts</span>
+            </div>
+            <p>Free font library with 45,000+ fonts for download.</p>
+            <ul class="banner-features">
+              <li>45K+ fonts</li>
+              <li>Free download</li>
+              <li>Categories</li>
+              <li>License info</li>
+            </ul>
+            <a href="https://www.dafont.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Google Fonts</h3>
+              <span class="badge">Web</span>
+            </div>
+            <p>Free open-source fonts optimized for web use.</p>
+            <ul class="banner-features">
+              <li>Open source</li>
+              <li>Web ready</li>
+              <li>Diverse</li>
+              <li>License-free</li>
+            </ul>
+            <a
+              href="https://fonts.google.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Font Squirrel</h3>
+              <span class="badge">Licensed</span>
+            </div>
+            <p>Free commercial-use fonts with web font kits.</p>
+            <ul class="banner-features">
+              <li>Commercial use</li>
+              <li>Web kits</li>
+              <li>Font generator</li>
+              <li>Quality fonts</li>
+            </ul>
+            <a
+              href="https://www.fontsquirrel.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Dribble</h3>
+              <span class="badge">Inspiration</span>
+            </div>
+            <p>
+              Design inspiration community with free resources and design files.
+            </p>
+            <ul class="banner-features">
+              <li>Inspiration</li>
+              <li>Design files</li>
+              <li>Community</li>
+              <li>Free assets</li>
+            </ul>
+            <a href="https://dribbble.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY: Icon Libraries (4 websites) -->
+      <div class="category-section" id="icons">
+        <div class="category-header">
+          <div
+            class="category-icon"
+            style="background: linear-gradient(135deg, #ec4899, #0ea5e9)"
+          >
+            🎯
+          </div>
+          <div>
+            <h2>Icon & Vector Libraries</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Font Awesome</h3>
+              <span class="badge">Icons</span>
+            </div>
+            <p>7,000+ free icons for web and mobile design.</p>
+            <ul class="banner-features">
+              <li>7K+ icons</li>
+              <li>Web ready</li>
+              <li>CSS/SVG</li>
+              <li>Community</li>
+            </ul>
+            <a
+              href="https://fontawesome.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Feather Icons</h3>
+              <span class="badge">Minimal</span>
+            </div>
+            <p>Beautiful open-source minimal icon set with 280+ icons.</p>
+            <ul class="banner-features">
+              <li>280+ icons</li>
+              <li>Open source</li>
+              <li>Minimal design</li>
+              <li>SVG</li>
+            </ul>
+            <a
+              href="https://feathericons.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Flat Icon</h3>
+              <span class="badge">Vectors</span>
+            </div>
+            <p>Millions of free and premium icons and vectors.</p>
+            <ul class="banner-features">
+              <li>Millions free</li>
+              <li>Vectors</li>
+              <li>Editable</li>
+              <li>Multiple formats</li>
+            </ul>
+            <a
+              href="https://www.flaticon.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Material Icons</h3>
+              <span class="badge">Google</span>
+            </div>
+            <p>Google's 4,000+ free material design icons.</p>
+            <ul class="banner-features">
+              <li>4K+ icons</li>
+              <li>Material design</li>
+              <li>Open source</li>
+              <li>Consistent</li>
+            </ul>
+            <a
+              href="https://fonts.google.com/icons"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY: Database & Backend (4 websites) -->
+      <div class="category-section" id="database">
+        <div class="category-header">
+          <div
+            class="category-icon"
+            style="background: linear-gradient(135deg, #10b981, #0ea5e9)"
+          >
+            🗄️
+          </div>
+          <div>
+            <h2>Database & Backend Services</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>MongoDB Atlas</h3>
+              <span class="badge">NoSQL</span>
+            </div>
+            <p>Free cloud MongoDB database with 512MB storage.</p>
+            <ul class="banner-features">
+              <li>512MB free</li>
+              <li>Cloud hosted</li>
+              <li>NoSQL</li>
+              <li>Scalable</li>
+            </ul>
+            <a
+              href="https://www.mongodb.com/cloud/atlas"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Firebase</h3>
+              <span class="badge">Backend</span>
+            </div>
+            <p>
+              Google's complete backend platform with free database and auth.
+            </p>
+            <ul class="banner-features">
+              <li>Database free</li>
+              <li>Authentication</li>
+              <li>Storage included</li>
+              <li>Real-time</li>
+            </ul>
+            <a
+              href="https://firebase.google.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Supabase</h3>
+              <span class="badge">PostgreSQL</span>
+            </div>
+            <p>
+              Open-source Firebase alternative with free PostgreSQL database.
+            </p>
+            <ul class="banner-features">
+              <li>PostgreSQL free</li>
+              <li>Open source</li>
+              <li>Auth included</li>
+              <li>Realtime</li>
+            </ul>
+            <a href="https://supabase.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>PlanetScale</h3>
+              <span class="badge">MySQL</span>
+            </div>
+            <p>
+              Free MySQL database powered by Vitess with generous free tier.
+            </p>
+            <ul class="banner-features">
+              <li>MySQL free</li>
+              <li>Serverless</li>
+              <li>Branching</li>
+              <li>Developer friendly</li>
+            </ul>
+            <a
+              href="https://planetscale.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY: Productivity & Notes (4 websites) -->
+      <div class="category-section" id="notes">
+        <div class="category-header">
+          <div
+            class="category-icon"
+            style="background: linear-gradient(135deg, #f59e0b, #ec4899)"
+          >
+            📝
+          </div>
+          <div>
+            <h2>Productivity & Note-Taking</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Obsidian</h3>
+              <span class="badge">Local</span>
+            </div>
+            <p>Free markdown note-taking with powerful linking and privacy.</p>
+            <ul class="banner-features">
+              <li>Free forever</li>
+              <li>Local storage</li>
+              <li>Markdown</li>
+              <li>Knowledge graph</li>
+            </ul>
+            <a href="https://obsidian.md" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Notion</h3>
+              <span class="badge">All-in-One</span>
+            </div>
+            <p>Free all-in-one workspace for notes, databases, and wikis.</p>
+            <ul class="banner-features">
+              <li>Free tier</li>
+              <li>Database</li>
+              <li>Collaboration</li>
+              <li>Powerful</li>
+            </ul>
+            <a href="https://www.notion.so" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Standard Notes</h3>
+              <span class="badge">Encrypted</span>
+            </div>
+            <p>Free encrypted note-taking with end-to-end encryption.</p>
+            <ul class="banner-features">
+              <li>Encrypted notes</li>
+              <li>Free tier</li>
+              <li>Open source</li>
+              <li>Sync</li>
+            </ul>
+            <a
+              href="https://standardnotes.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>TiddlyWiki</h3>
+              <span class="badge">Wiki</span>
+            </div>
+            <p>Free open-source personal wiki and note-taking system.</p>
+            <ul class="banner-features">
+              <li>Self-contained</li>
+              <li>Open source</li>
+              <li>Customizable</li>
+              <li>Free forever</li>
+            </ul>
+            <a href="https://tiddlywiki.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY: Photo Editing (4 websites) -->
+      <div class="category-section" id="photos">
+        <div class="category-header">
+          <div
+            class="category-icon"
+            style="background: linear-gradient(135deg, #06b6d4, #a855f7)"
+          >
+            📸
+          </div>
+          <div>
+            <h2>Photo Editing Tools</h2>
+            <div class="category-count">4 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Photopea</h3>
+              <span class="badge">Photoshop</span>
+            </div>
+            <p>Free browser-based Photoshop-like editor with PSD support.</p>
+            <ul class="banner-features">
+              <li>Photoshop-like</li>
+              <li>PSD support</li>
+              <li>Browser-based</li>
+              <li>No download</li>
+            </ul>
+            <a
+              href="https://www.photopea.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Pixlr Editor</h3>
+              <span class="badge">Advanced</span>
+            </div>
+            <p>Advanced browser photo editor with filters and effects.</p>
+            <ul class="banner-features">
+              <li>Advanced tools</li>
+              <li>Filters & effects</li>
+              <li>Cloud save</li>
+              <li>No install</li>
+            </ul>
+            <a
+              href="https://pixlr.com/editor"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Lightroom Online</h3>
+              <span class="badge">Adobe</span>
+            </div>
+            <p>Free version of Adobe Lightroom with essential editing tools.</p>
+            <ul class="banner-features">
+              <li>Adobe quality</li>
+              <li>Presets</li>
+              <li>Cloud storage</li>
+              <li>Free tier</li>
+            </ul>
+            <a
+              href="https://lightroom.adobe.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Fotor</h3>
+              <span class="badge">AI</span>
+            </div>
+            <p>Free AI-powered photo editor with AI enhancements.</p>
+            <ul class="banner-features">
+              <li>AI tools</li>
+              <li>Easy to use</li>
+              <li>Templates</li>
+              <li>Free tier</li>
+            </ul>
+            <a href="https://www.fotor.com" target="_blank" class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY: Certificates & Learning Paths (2 websites) -->
+      <div class="category-section" id="certificates">
+        <div class="category-header">
+          <div
+            class="category-icon"
+            style="background: linear-gradient(135deg, #a855f7, #10b981)"
+          >
+            🏆
+          </div>
+          <div>
+            <h2>Certificates & Learning Paths</h2>
+            <div class="category-count">2 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Google Career</h3>
+              <span class="badge">Certificates</span>
+            </div>
+            <p>Google's professional certificates with audit option free.</p>
+            <ul class="banner-features">
+              <li>Audit free</li>
+              <li>Professional</li>
+              <li>Job ready</li>
+              <li>Google-backed</li>
+            </ul>
+            <a
+              href="https://www.coursera.org/google-career-certificates"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>LinkedIn Learning</h3>
+              <span class="badge">Free Month</span>
+            </div>
+            <p>
+              Free trial month of LinkedIn Learning plus free library access.
+            </p>
+            <ul class="banner-features">
+              <li>Free trial</li>
+              <li>Quality content</li>
+              <li>Certificates</li>
+              <li>Skills tracking</li>
+            </ul>
+            <a
+              href="https://www.linkedin.com/learning"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CATEGORY: SEO & Analytics Tools (2 websites) -->
+      <div class="category-section" id="seo">
+        <div class="category-header">
+          <div
+            class="category-icon"
+            style="background: linear-gradient(135deg, #f59e0b, #0ea5e9)"
+          >
+            📈
+          </div>
+          <div>
+            <h2>SEO & Analytics Tools</h2>
+            <div class="category-count">2 websites</div>
+          </div>
+        </div>
+        <div class="banner-grid">
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Google Analytics</h3>
+              <span class="badge">Free</span>
+            </div>
+            <p>
+              Completely free website analytics from Google with powerful
+              insights.
+            </p>
+            <ul class="banner-features">
+              <li>Free forever</li>
+              <li>Powerful</li>
+              <li>Real-time</li>
+              <li>Google-backed</li>
+            </ul>
+            <a
+              href="https://analytics.google.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+
+          <div class="banner-card">
+            <div class="banner-card-header">
+              <h3>Ubersuggest</h3>
+              <span class="badge">SEO</span>
+            </div>
+            <p>Free SEO tool for keyword research and site audits.</p>
+            <ul class="banner-features">
+              <li>Free tier</li>
+              <li>Keyword research</li>
+              <li>Site audit</li>
+              <li>Rank tracking</li>
+            </ul>
+            <a
+              href="https://ubersuggest.com"
+              target="_blank"
+              class="banner-link"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2025 Free Resources Hub - 100+ Curated Websites. Check each
+        site's license before commercial use. All resources completely free.
+      </p>
+    </footer>
+
+    <script>
+      // Search functionality
+      const searchInput = document.getElementById("searchInput");
+      const cards = document.querySelectorAll(".banner-card");
+
+      searchInput.addEventListener("keyup", (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        let visibleCount = 0;
+
+        cards.forEach((card) => {
+          const title = card.querySelector("h3").textContent.toLowerCase();
+          const description = card.querySelector("p").textContent.toLowerCase();
+          const features = card
+            .querySelector(".banner-features")
+            .textContent.toLowerCase();
+
+          if (
+            title.includes(searchTerm) ||
+            description.includes(searchTerm) ||
+            features.includes(searchTerm)
+          ) {
+            card.style.display = "";
+            visibleCount++;
+          } else {
+            card.style.display = "none";
+          }
+        });
+
+        // Show/hide sections with no results
+        document.querySelectorAll(".category-section").forEach((section) => {
+          const visibleCards = section.querySelectorAll(
+            '.banner-card:not([style*="display: none"])'
+          ).length;
+          section.style.display = visibleCards > 0 ? "" : "none";
+        });
+      });
+
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if (href !== "#") {
+            e.preventDefault();
+            const element = document.querySelector(href);
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
